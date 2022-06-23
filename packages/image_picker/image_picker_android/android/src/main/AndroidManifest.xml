@@ -2,6 +2,11 @@
     package="io.flutter.plugins.imagepicker">
 
     <application>
-        
+    <provider
+            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+            android:authorities="${applicationId}.flutter.image_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        </provider>
     </application>
 </manifest>
